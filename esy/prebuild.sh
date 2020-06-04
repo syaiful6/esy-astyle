@@ -7,6 +7,6 @@ cd "_build"
 
 if [ $OS == "Darwin" ]; then
   cmake "../mac"
-elif [ $OS == "Linux" ]; then
+elif [ $OS == "Linux" ] || [ $OS == "FreeBSD" ]; then
   cmake "../linux"
 fi
